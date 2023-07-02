@@ -69,7 +69,6 @@ script.onload = function () {
     width: "inherit",
     height: "inherit",
     params: {
-      autoplay: false,
       "ui-start-screen-info": false,
       "sharing-enable": false,
     },
@@ -95,7 +94,6 @@ script.onload = function () {
     width: "inherit",
     height: "inherit",
     params: {
-      autoplay: false,
       "ui-start-screen-info": false,
       "sharing-enable": false,
     },
@@ -121,7 +119,6 @@ script.onload = function () {
     width: "inherit",
     height: "inherit",
     params: {
-      autoplay: false,
       "ui-start-screen-info": false,
       "sharing-enable": false,
     },
@@ -147,7 +144,6 @@ script.onload = function () {
     width: "inherit",
     height: "inherit",
     params: {
-      autoplay: false,
       "ui-start-screen-info": false,
       "sharing-enable": false,
     },
