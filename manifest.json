@@ -1,4 +1,8 @@
 {
+  "name": "Mohmmed Aqeeb",
+  "short_name": "Mohmmed Aqeeb",
+  "description": "The portfolio of Mohmmed Aqeeb, Front-End Developer. ",
+  "version": "1.0.0",
   "icons": [
     {
       "src": "/assets/favicon/android-chrome-192x192.png",
@@ -10,5 +14,8 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
 }
