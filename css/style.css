@@ -55,7 +55,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: url(../assets/hero/herobg.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -206,7 +206,7 @@ model-viewer {
 
 /* ABOUT */
 .about {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .about-subheading {
@@ -244,10 +244,6 @@ model-viewer {
     margin: 0 2rem;
   }
 
-  .about {
-    height: 100%;
-  }
-
   .about-subheading {
     letter-spacing: 0.5px;
   }
@@ -266,7 +262,7 @@ model-viewer {
 /* Expertise */
 .expertise {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: #050816;
 }
 
@@ -394,14 +390,6 @@ model-viewer {
     width: 50px;
   }
 }
-@media (max-height: 670px) {
-  .hero {
-    height: 100% !important;
-  }
-  .expertise {
-    height: 100% !important;
-  }
-}
 
 @media (max-width: 362px) {
   .expertise-tech div {
@@ -414,9 +402,10 @@ model-viewer {
     margin: 0 20px 3rem;
   }
 }
+
 /* /////////////////////////////////// */
 .portfolio {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .splide__slide {
