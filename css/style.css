@@ -8,6 +8,11 @@
   src: url("../font/pptelegraf-ultrabold.otf");
 }
 
+@font-face {
+  font-family: "NotoKufiArabic";
+  src: url("../font/NotoKufiArabic-Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -62,6 +67,17 @@ body {
   background-size: cover;
   overflow-x: hidden;
   overflow: hidden;
+}
+
+.bismillah {
+  padding: 30px 0;
+  font-size: 18px;
+  font-family: "NotoKufiArabic", sans-serif;
+  position: absolute;
+  top: calc(100% - 90vh);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
 }
 
 .hero-img {
