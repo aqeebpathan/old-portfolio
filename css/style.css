@@ -71,7 +71,7 @@ body {
 
 .bismillah {
   padding: 30px 0;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "NotoKufiArabic", sans-serif;
   position: absolute;
   top: calc(100% - 90vh);
@@ -408,6 +408,9 @@ model-viewer {
   .tech_icons {
     height: 50px;
     width: 50px;
+  }
+  .expertise-tech {
+    justify-content: space-evenly;
   }
 }
 
