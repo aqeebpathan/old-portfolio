@@ -69,17 +69,6 @@ body {
   overflow: hidden;
 }
 
-.bismillah {
-  padding: 30px 0;
-  font-size: 16px;
-  font-family: "NotoKufiArabic", sans-serif;
-  position: absolute;
-  top: calc(100% - 90vh);
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-}
-
 .hero-img {
   position: absolute;
   width: 35vw;
