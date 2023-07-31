@@ -8,11 +8,6 @@
   src: url("../font/pptelegraf-ultrabold.otf");
 }
 
-@font-face {
-  font-family: "NotoKufiArabic";
-  src: url("../font/NotoKufiArabic-Regular.ttf");
-}
-
 * {
   margin: 0;
   padding: 0;
