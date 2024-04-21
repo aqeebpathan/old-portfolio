@@ -1,4 +1,3 @@
-import TypeStack from "./components/TypeStack";
 import Hero from "./sections/Hero";
 import WhatIDo from "./sections/WhatIDo";
 

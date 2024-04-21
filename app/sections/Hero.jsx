@@ -14,7 +14,7 @@ const Hero = () => {
       setUsername(storedUsername);
     } else {
       // If username doesn't exist, prompt the user
-      const userInput = prompt("Enter your username:", "user");
+      const userInput = prompt("What shall I call you?", "Guest");
       if (userInput) {
         // If user provides a username, set it to state and localStorage
         setUsername(userInput);
