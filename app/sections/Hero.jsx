@@ -19,9 +19,13 @@ const Hero = () => {
         // If user provides a username, set it to state and localStorage
         setUsername(userInput);
         localStorage.setItem("username", userInput);
+      } else {
+        // If user cancels or leaves prompt empty, set default value to "Guest"
+        setUsername("Guest");
+        localStorage.setItem("username", "Guest");
       }
     }
-  }, []); // Empty dependency array ensures this effect runs only once on component mount
+  }, []); // Empty dependency array means this effect runs once, similar to componentDidMount
 
   return (
     <section>
