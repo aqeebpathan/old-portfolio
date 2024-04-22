@@ -17,3 +17,5 @@ export const footerLinks = [
   { title: "/ Github", href: "https://www.github.com/aqeebpathan/" },
   { title: "/ Email", href: "mailto:hello@aqeeb.dev" },
 ];
+
+export const typeformLink = "https://cwrurs3gkyn.typeform.com/to/hrZ7lN9B";

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navLinks } from "../constant";
+import { navLinks, typeformLink } from "../constant";
 import ShinyButton from "./ShinyButton";
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden sm:flex">
-            <ShinyButton text={"Drop me a line"} href="/" />
+            <ShinyButton text={"Drop me a line"} href={typeformLink} />
           </div>
         </div>
       </nav>

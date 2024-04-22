@@ -5,7 +5,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer>
-      <div className="max-w-[1008px] mx-auto w-full flex justify-between text-xl md:text-2xl">
+      <div className="max-w-[1008px] mx-auto w-full flex justify-between text-[16px] sm:text-xl md:text-2xl px-4 lg:px-0">
         <p>©{year}</p>
         <ul className="flex gap-8">
           {footerLinks.map((link, i) => (

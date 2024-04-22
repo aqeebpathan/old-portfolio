@@ -5,6 +5,7 @@ import Link from "next/link";
 const ShinyButton = ({ text, href }) => {
   return (
     <motion.a
+      href={href}
       initial={{ "--x": "100%", scale: 1 }}
       animate={{ "--x": "-100%" }}
       whileTap={{ scale: 0.97 }}
