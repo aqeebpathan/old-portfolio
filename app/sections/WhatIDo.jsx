@@ -1,5 +1,10 @@
 import Image from "next/image";
-import { githubNote, whatIDo, whatIDoContinue } from "../constant";
+import {
+  githubNote,
+  typeformLink,
+  whatIDo,
+  whatIDoContinue,
+} from "../constant";
 import Link from "next/link";
 
 const WhatIDo = () => {
@@ -26,7 +31,7 @@ const WhatIDo = () => {
               className="inline-block w-[30px] h-[30px] md:w-[35px] md:h-[35px] "
             />{" "}
             {whatIDoContinue}{" "}
-            <Link href="/" className=" hover:text-white">
+            <Link href={typeformLink} className=" hover:text-white">
               together?
             </Link>
           </span>

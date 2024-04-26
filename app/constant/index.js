@@ -1,7 +1,7 @@
 export const navLinks = [
   { title: "About", href: "#About" },
   { title: "Project", href: "#Project" },
-  { title: "Blog", href: "#Blog" },
+  { title: "Blog", href: "/blog" },
 ];
 
 export const aboutPara = `My name is Mohmmed Aqeeb, a frontend developer who's all about keeping things simple and getting creative. I believe good design isn't just about looking cool - it's about being easy to use, too. Oh, and I can tackle complex designs like a champ! I've been diving into frontend stuff for almost 3 years now, working with frameworks like React and Next.js. I'm also pretty comfy with backend development using Node.js and love crafting sleek UIs with Tailwind CSS.  Let's keep the pixels polished and the code pristine!`;

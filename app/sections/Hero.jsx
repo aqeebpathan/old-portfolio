@@ -33,7 +33,7 @@ const Hero = () => {
         <h1 className="text-[calc(6.25vw+24px)] lg:text-8xl font-bold leading-none">
           Frontend Developer
           <br />
-          Creative
+          $@%!*#
         </h1>
         <div className="flex sm:hidden mt-4">
           <ShinyButton text={"Drop me a line"} href={typeformLink} />
