@@ -10,7 +10,7 @@ const fetchBlogs = async () => {
     return blog;
   } catch (error) {
     console.error("Error fetching blog:", error.message);
-    return null;
+    return [];
   }
 };
 
