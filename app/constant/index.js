@@ -19,3 +19,5 @@ export const footerLinks = [
 ];
 
 export const typeformLink = "https://cwrurs3gkyn.typeform.com/to/hrZ7lN9B";
+
+export const BASE_API_URL = process.env.NEXT_PUBLIC_BASE_URL;
