@@ -18,6 +18,10 @@ const fetchBlogs = async () => {
 };
 
 const page = async () => {
+  if (!BASE_API_URL) {
+    return null;
+  }
+
   const blogs = await fetchBlogs();
   return (
     <main>

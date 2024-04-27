@@ -26,6 +26,10 @@ const fetchBlog = async (blogId) => {
 };
 
 const page = async ({ params }) => {
+  if (!BASE_API_URL) {
+    return null;
+  }
+
   const { blogId } = params;
   const blog = await fetchBlog(blogId);
   console.log(blog);
