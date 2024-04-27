@@ -3,8 +3,22 @@ import { BASE_API_URL } from "@/app/constant";
 export async function generateMetadata({ params }) {
   const { blogId } = params;
   const blog = await fetchBlog(blogId);
+  const desc = blog.content[0].description;
+
   return {
     title: blog.title,
+    description: desc,
+    keywords: blog.title,
+    author: [{ name: "Mohmmed Aqeeb Pathan" }],
+    url: `https://aqeeb.dev/blog${blogId}`,
+    siteName: "Mohmmed Aqeeb's Portfolio",
+    type: "website",
+    publisher: "Mohmmed Aqeeb Pathan",
+    creator: "Mohmmed Aqeeb Pathan",
+    openGraph: {
+      title: blog.title,
+      description: desc,
+    },
   };
 }
 

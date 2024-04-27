@@ -40,7 +40,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="w-[calc(100%-2rem)] max-w-[calc(1200px-2rem)] mx-auto  rounded-[11px] bg-[#242427] relative z-40 ">
-        <div className="flex items-center h-[15px] md:h-[25px] px-[5px] md:px-[10px] z-50 w-full  rounded-t-[10px] bg-[#323235]">
+        <div className="flex items-center h-[25px] px-[10px] z-50 w-full  rounded-t-[10px] bg-[#323235]">
           <span className="w-2 lg:w-[14px] h-2 lg:h-[14px] mx-[3px] inline-block bg-[#242426] rounded-full"></span>
           <span className="w-2 lg:w-[14px] h-2 lg:h-[14px] mx-[3px] inline-block bg-[#242426] rounded-full"></span>
           <span className="w-2 lg:w-[14px] h-2 lg:h-[14px] mx-[3px] inline-block bg-[#242426] rounded-full"></span>
