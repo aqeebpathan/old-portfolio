@@ -1,4 +1,3 @@
-import ContentRenderer from "@/app/components/ContentRenderer";
 import { BASE_API_URL } from "@/app/constant";
 
 export async function generateMetadata({ params }) {
@@ -34,13 +33,30 @@ const page = async ({ params }) => {
   const blog = await fetchBlog(blogId);
   console.log(blog);
 
+  const blogTitle = blog.title;
+  const colonIndex = blogTitle.indexOf(":");
+  const beforeColon = blogTitle
+    .substring(0, colonIndex + 1)
+    .replace(":", " 🤝");
+  const afterColon = blogTitle.substring(colonIndex + 1);
+
   return (
     <main>
-      <section className="max-w-[1008px] mx-auto w-full px-4  md:px-[108px] text-[#CCCCCC]">
+      <section className="max-w-[1008px] mx-auto w-full px-4  md:px-[108px]  text-[#a9a9a9]">
         <h1 className="text-3xl font-semibold tracking-wide my-8">
-          {blog.title}
+          <span className="text-[#CCCCCC]">{beforeColon}</span>
+          {afterColon}
         </h1>
-        <ContentRenderer content={blog.content} />
+        <div className="mb-16">
+          {blog.content.map((paragraph, i) => (
+            <div key={i}>
+              <h3 className="my-4 font-bold text-[19px] text-[#CCCCCC]">
+                {paragraph.title && "/ " + paragraph.title}
+              </h3>
+              <p className="text-[17px] mb-8">{paragraph.description}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   );

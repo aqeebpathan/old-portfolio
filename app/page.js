@@ -1,3 +1,4 @@
+import Blog from "./sections/Blog";
 import Hero from "./sections/Hero";
 import WhatIDo from "./sections/WhatIDo";
 
@@ -6,6 +7,7 @@ const page = () => {
     <main>
       <Hero />
       <WhatIDo />
+      <Blog />
     </main>
   );
 };
