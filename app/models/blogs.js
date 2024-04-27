@@ -8,9 +8,11 @@ const contentParagrahs = new mongoose.Schema({
   title: {
     type: String,
   },
+  subTitle: {
+    type: String,
+  },
   description: {
     type: String,
-    required: true,
   },
 });
 

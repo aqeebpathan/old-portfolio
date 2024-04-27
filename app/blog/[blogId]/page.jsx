@@ -10,9 +10,7 @@ export async function generateMetadata({ params }) {
 
 const fetchBlog = async (blogId) => {
   try {
-    const response = await fetch(`${BASE_API_URL}/api/blogs/${blogId}`, {
-      cache: "no-store",
-    });
+    const response = await fetch(`${BASE_API_URL}/api/blogs/${blogId}`);
     if (!response.ok) {
       throw new Error("Failed to fetch data");
     }
@@ -31,7 +29,7 @@ const page = async ({ params }) => {
 
   const { blogId } = params;
   const blog = await fetchBlog(blogId);
-  console.log(blog);
+  // console.log(blog);
 
   const blogTitle = blog.title;
   const colonIndex = blogTitle.indexOf(":");
@@ -50,9 +48,12 @@ const page = async ({ params }) => {
         <div className="mb-16">
           {blog.content.map((paragraph, i) => (
             <div key={i}>
-              <h3 className="my-4 font-bold text-[19px] text-[#CCCCCC]">
-                {paragraph.title && "/ " + paragraph.title}
+              <h3 className="my-2 font-bold text-[19px] text-[#CCCCCC]">
+                {paragraph.title && paragraph.title}
               </h3>
+              <h5 className="font-bold text-[#CCCCCC]">
+                {paragraph.subTitle && paragraph.subTitle}
+              </h5>
               <p className="text-[17px] mb-8">{paragraph.description}</p>
             </div>
           ))}

@@ -4,7 +4,7 @@ import { BASE_API_URL } from "../constant";
 const fetchBlogs = async () => {
   try {
     const response = await fetch(`${BASE_API_URL}/api/blogs`, {
-      cache: "no-store",
+      next: { revalidate: 2592000 },
     });
     if (!response.ok) {
       throw new Error("Failed to fetch data");
